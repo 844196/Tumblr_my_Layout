@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="text:Bottom Strings" content=""/>
+        <meta name="text:Bottom Text" content=""/>
         <meta name="if:Hide Tumblr Controls" content="0"/>
         <style>
             {CustomCSS}
@@ -170,12 +170,12 @@
         </table>
 
         <address>
-            {block:IfBottomStrings}
-                {text:Bottom Strings}
-            {/block:IfBottomStrings}
-            {block:IfNotBottomStrings}
+            {block:IfBottomText}
+                {text:Bottom Text}
+            {/block:IfBottomText}
+            {block:IfNotBottomText}
                 Tumblr/Apache2_modoki at tumblr.com Port 80
-            {/block:IfNotBottomStrings}
+            {/block:IfNotBottomText}
         </address>
 
         {block:PreviousPage}
