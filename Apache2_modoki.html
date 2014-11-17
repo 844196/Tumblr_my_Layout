@@ -5,12 +5,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="text:Bottom Text" content=""/>
+        <meta name="select:Thumbnail Size" content="22" title="Small">
+        <meta name="select:Thumbnail Size" content="50" title="Normal">
         <meta name="if:Hide Tumblr Controls" content="0"/>
         <style>
             {CustomCSS}
             {block:IfHideTumblrControls}
                 #tumblr_controls { display: none; }
             {/block:IfHideTumblrControls}
+            img {
+                height: {select:Thumbnail Size}px;
+                width: {select:Thumbnail Size}px;
+            }
         </style>
 
         <script type="text/javascript">
@@ -45,7 +51,7 @@
                 {block:PermalinkPage}
                     <tr>
                         <td>
-                            <img src="http://static.tumblr.com/fhczlfs/0cznepkn3/back.gif" alt="" width="50" height="50"/>
+                            <img src="http://static.tumblr.com/fhczlfs/0cznepkn3/back.gif" alt="" />
                         </td>
                         <td>
                             <a href="/../..">Parent Directory</a>
@@ -58,8 +64,8 @@
                 {block:Photo}
                     <div class="entry-content">
                         <tr>
-                            <td valign="top">
-                                <img src={PhotoURL-75sq} alt="{PhotoAlt}" width="50" height="50"/>
+                            <td valign="middle">
+                                <img src={PhotoURL-75sq} alt="{PhotoAlt}" />
                             </td>
                             <td>
 
@@ -76,7 +82,7 @@
                                 {DayOfMonthWithZero}-{ShortMonth}-{Year} {24HourWithZero}:{Minutes}
                             </td>
                             <td align="right">
-                                <p>-</p>
+                                -
                             </td>
                             <td align="right">
                                 {block:Caption}
@@ -94,8 +100,8 @@
                     {block:Photoset}
                         <div class="entry-content">
                             <tr>
-                                <td valign="top">
-                                    <img src="http://static.tumblr.com/fhczlfs/mS0nepknk/folder.gif" alt="" width="50" height="50"/>
+                                <td valign="middle">
+                                    <img src="http://static.tumblr.com/fhczlfs/mS0nepknk/folder.gif" alt="" />
                                 </td>
                                 <td>
 
@@ -112,7 +118,7 @@
                                     {DayOfMonthWithZero}-{ShortMonth}-{Year} {24HourWithZero}:{Minutes}
                                 </td>
                                 <td align="right">
-                                    <p>-</p>
+                                    -
                                 </td>
                                 <td align="right">
 
@@ -148,7 +154,7 @@
                                         {DayOfMonthWithZero}-{ShortMonth}-{Year} {24HourWithZero}:{Minutes}
                                     </td>
                                     <td align="right">
-                                        <p>-</p>
+                                        -
                                     </td>
                                     <td align="right">
                                         {block:Caption}
