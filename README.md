@@ -1,6 +1,8 @@
 Tumblr  my  Layout (modified)
 ================
 
+![](http://33.media.tumblr.com/7951bb7343c8ad1d5b276a31ca160c40/tumblr_nf6xva5JpC1s7qf9xo1_1280.png)
+
 ## Overview
 [Tumblr my Layout (3492d2d)](https://github.com/sasairc/Tumblr_my_Layout/tree/3492d2daf7d3ca7ccd4a03b61069b8919089a147)をベースにいくつかの変更を加えたものです。
 
