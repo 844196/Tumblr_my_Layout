@@ -1,30 +1,26 @@
-Tumblr  my  Layout
+Tumblr  my  Layout (modified)
 ================
 
-　本来はブログサービスである*Tumblr*を、画像アップローダとして利用するために特化した軽量なカスタムテーマです。  
-　レイアウトはApacheの「整然としていて見やすい」ファイルリストを参考にしており、SNS特有の煩わしさを軽減します。  
+## Overview
+[Tumblr my Layout (3492d2d)](https://github.com/sasairc/Tumblr_my_Layout/tree/3492d2daf7d3ca7ccd4a03b61069b8919089a147)をベースにいくつかの変更を加えたものです。
 
-## Requirement  
+## Features
+### `Thumbnail Size`
+テーマオプション内でサムネイルのサイズを`Normal`、`Small`から選べるようにしました。
 
-- Javascriptを実行できるWebブラウザ  
-  標準では、URLからファイル名のみを抽出する為にJavascriptを使用します。  
-もしJavascript実行環境を持たないブラウザで利用したい場合は、同梱の*without_js.patch*を適用してください。  
+### `Thumbnail Type`
+[パッチ](https://github.com/sasairc/Tumblr_my_Layout/tree/master/patch)を当てなくても、テーマオプション内でPhotosetのサムネイル表示を変更できるようにしました。
 
-## Install
+### other
 
-　テーマのカスタマイズ画面から「HTMLを編集」を開き、既存のコードを本コードと置き換えて下さい。
-
-## Licence
-
-[MIT](http://opensource.org/licenses/mit-license.php)  
-Icons: [Public Domain](http://www.apache.org/icons/)  
+- 一部オプション名の変更
+- `<img>`スタイルの再利用化
 
 ## Author
-
+### Original
 _github_ [sasairc](https://github.com/sasairc)  
 _twitter_  [@sasairc_2](https://twitter.com/sasairc_2)
 
-## Thanks  
-
-  [Masaya Tk.さん](https://github.com/844196)のpullreq及び、アドバイスはとても参考になりました。  
-  重ねて感謝致します。  
+### Modified
+*github* [844196](https://github.com/844196)
+*twitter* [@84____](https://twitter.com/84____)
