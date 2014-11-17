@@ -7,6 +7,9 @@
         <meta name="text:Bottom Text" content=""/>
         <meta name="select:Thumbnail Size" content="22" title="Small">
         <meta name="select:Thumbnail Size" content="50" title="Normal">
+        <meta name="select:Thumbnail Type" content="default" title="Default">
+        <meta name="select:Thumbnail Type" content="type1" title="Type 1">
+        <meta name="select:Thumbnail Type" content="type2" title="Type 2">
         <meta name="if:Hide Tumblr Controls" content="0"/>
         <style>
             {CustomCSS}
@@ -16,6 +19,12 @@
             img {
                 height: {select:Thumbnail Size}px;
                 width: {select:Thumbnail Size}px;
+            }
+            .PhotosetImgSize {
+                height: initial;
+                width: initial;
+                max-height: {select:Thumbnail Size}px;
+                max-width: {select:Thumbnail Size}px;
             }
         </style>
 
@@ -137,7 +146,15 @@
                             <div class="entry-content">
                                 <tr>
                                     <td>
-                                        <img src="{PhotoURL-250}" alt="" width="50" height="50"/>
+                                        <script type="text/javascript">
+                                            if ( '{select:Thumbnail Type}' == 'default' ) {
+                                                document.write('<img src="{PhotoURL-250}" alt=""/>')
+                                            } else if ( '{select:Thumbnail Type}' == 'type1' ) {
+                                                document.write('<div align="center"><img class="PhotosetImgSize" src="{PhotoURL-250}" alt="" /></div>')
+                                            } else if ( '{select:Thumbnail Type}' == 'type2' ) {
+                                                document.write('<div style="height:{select:Thumbnail Size}px; width:{select:Thumbnail Size}px; background:url({PhotoURL-250}) no-repeat center;"></div>')
+                                            }
+                                        </script>
                                     </td>
                                     <td>
 
